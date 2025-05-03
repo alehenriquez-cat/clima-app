@@ -53,8 +53,9 @@ main {
   justify-content: center;
   margin-top: 10px;
 }
-.clima-app-temperature-icon {
-  font-size: 66px;
+.clima-app-icon {
+  width: 88px;
+  height: 88px;
 }
 .clima-app-temperature-value {
   font-size: 85px;

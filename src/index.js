@@ -9,7 +9,9 @@ function showTemperature(response) {
   let wind = Math.round(response.data.wind.speed);
   let timeElement = document.querySelector("#clima-time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#clima-app-temperature-icon");
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="${response.data.condition.description}" class="clima-app-icon"/>`;
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${humidity}%`;
@@ -30,8 +32,8 @@ function showTemperature(response) {
     let day = days[date.getDay()];
     let hour = date.getHours();
     let minute = date.getMinutes();
-    if (minutes < 10) {
-      minutes = `0:${minutes}`;
+    if (minute < 10) {
+      minute = `0${minute}`;
     }
     return `${day} ${hour}:${minute}`;
   }
