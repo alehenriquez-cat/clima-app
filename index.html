@@ -19,19 +19,20 @@
   <body>
     <div class="clima-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-form-input"
+            id="search-form-input"
           /><input type="submit" value="Search" class="search-form-submit" />
         </form>
       </header>
       <main>
         <div class="clima-app-data">
           <div>
-            <div class="clima-app-city">Melbourne</div>
+            <div class="clima-app-city" id="app-city">Melbourne</div>
 
             <div class="clima-app-temperature-icon">☀️</div>
             <div class="clima-app-temperature-container">
@@ -57,5 +58,6 @@
         <a href="https://climabyale.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
