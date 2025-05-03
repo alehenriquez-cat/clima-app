@@ -3,14 +3,83 @@ body {
 }
 .clima-app {
   background-color: #f9eff1;
-  max-width: 800px;
+  max-width: 700px;
   margin: 50px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 15px;
   padding: 30px;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+}
+
+header {
+  border-bottom: 1px solid #ffdde4;
+  padding: 0 0 30px 0;
+}
+a {
+  color: #c86375;
+}
+.search-form-input {
+  background-color: #fce2e8;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 15px;
+  font-size: 16px;
+}
+.search-form-submit {
+  background-color: #c86375;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+main {
+  padding: 30px 0;
+}
+.clima-app-data {
+  text-align: center;
+  color: #532830;
+}
+.clima-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.clima-app-temperature-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.clima-app-temperature-icon {
+  font-size: 66px;
+}
+.clima-app-temperature-value {
+  font-size: 85px;
+  line-height: 80px;
+  font-weight: 700;
+}
+.clima-app-temperature-unit {
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.clima-app-details {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20px;
+  color: #532830ca;
+}
+.clima-app-details strong {
+  color: #c86375;
+}
+footer {
+  border-top: 1px solid #ffdde4;
+  padding: 30px 0 0 0;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
 }
