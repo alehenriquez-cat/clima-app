@@ -52,4 +52,26 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      ` <div class="clima-app-forecast-day">
+            <div class="clima-app-forecast-date">${day}</div>
+            <div class="clima-app-forecast-icon">☀️</div>
+            <div class="clima-app-forecast-temperatures">
+              <div class="clima-app-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="clima-app-forecast-temperature">9°</div>
+            </div>
+          </div>
+          `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
 searchCity("Melbourne");
+displayForecast();
