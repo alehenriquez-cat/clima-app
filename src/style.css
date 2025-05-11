@@ -77,8 +77,10 @@ main {
   margin-bottom: 10px;
 }
 .clima-app-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  height: 80px;
 }
 .clima-app-forecast {
   display: flex;
